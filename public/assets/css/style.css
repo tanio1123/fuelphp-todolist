@@ -1,0 +1,271 @@
+body {
+  background: #f6f5f4;
+  color: #333;
+  width: 100%;
+  margin: 0 auto;
+}
+.main {
+  width: 400px;
+  margin: 100px auto;
+}
+.form-main {
+  text-align: right;
+  margin-bottom: 30px;
+}
+.inputArea {
+  margin-bottom: 15px;
+}
+.inputText {
+  padding: 5px;
+  height: 40px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+.btn {
+  padding: 5px 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  text-align: right;
+  margin: 0;
+  font-size: 16px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.error {
+  display: none;
+  color: #e9573e;
+}
+#searchBox {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.searchBox__icon {
+  width: 16px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.searchBox__input {
+  width: calc(100% - 30px);
+  height: 100% !important;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-bottom: 0 !important;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list__item {
+  overflow: hidden;
+  padding: 15px 15px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  transition: 0.5s transform;
+}
+.list__item:hover {
+  transform: scale(1.02);
+  transition: 0.5s transform;
+}
+.list__item--done {
+  background: #d8d8d8;
+  color: #888;
+}
+.icon-square,
+.icon-check,
+.icon-sort,
+.icon-trash {
+  cursor: pointer;
+  transition: 0.5s transform;
+}
+.icon-square:hover,
+.icon-check:hover,
+.icon-sort:hover,
+.icon-trash:hover {
+  transform: scale(1.2);
+  transition: 0.5s transform;
+}
+.icon-trash {
+  float: right;
+  top: 4px;
+  position: relative;
+  color: #e9573e;
+}
+.icon-square,
+.icon-check {
+  margin-right: 15px;
+}
+.editText {
+  /*display: none;*/
+  width: 80%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.ctn-form__title {
+  color: #545454;
+  font-size: 24px;
+  text-align: center;
+}
+
+.site-width {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 80px;
+  background: #333;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container__title {
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
+  margin: 0;
+}
+.top-nav {
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.top-nav__1i {
+  padding: 0 20px;
+  line-height: 80px;
+}
+.top-nav__1i__a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.top-nav__1i__a:hover {
+  text-decoration: underline !important;
+}
+
+/*コンテナ*/
+.ctn-form {
+  width: 500px;
+  margin: 100px auto;
+}
+/*form*/
+form {
+  overflow: hidden;
+}
+form > table {
+  width: 100%;
+}
+form > table tr > td:first-child {
+  width: 40%;
+}
+.area-error-msg {
+  color: lightcoral;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  border: none;
+  width: 100%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  color: #545454;
+  height: 60px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 15px 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #3d3938;
+  color: white;
+  float: right;
+  width: 150px;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background: #111;
+  cursor: pointer;
+}
+
+a {
+  color: #545454;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.err_msg {
+  color: #ff4d4b;
+}
+#footer {
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  background: #333;
+  color: #fff;
+}
+/* msg */
+.alert-msg {
+  display: none;
+  line-height: 40px;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+}
+.alert-msg.success {
+  background: #01b3e6;
+}
+.alert-msg.err {
+  background: #fe8a8b;
+}
+/*その他*/
+.vartical-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
